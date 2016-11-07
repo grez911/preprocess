@@ -8,7 +8,7 @@ https://github.com/hplgit/preprocess.git.
 | Home            | https://github.com/hplgit/preprocess.git |
 | License         | MIT (see `LICENSE.txt`)                  |
 | Platforms       | Windows, Linux, Mac OS X, Unix           |
-| Current Version | 1.2                                      |
+| Current Version | 1.2.2                                    |
 | Dev Status      | Fairly mature                            |
 | Requirements    | Python >= 2.7 or Python >= 3.4           |
 | Dependencies    | [python-future](http://python-future.org) |

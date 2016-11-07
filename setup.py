@@ -21,13 +21,11 @@ command line app and as a Python module.
 import os
 import sys
 import distutils
+import re
 from setuptools import setup
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "lib"))
-try:
-    import preprocess
-finally:
-    del sys.path[0]
+version = '.'.join(re.findall('__version_info__ = \((\d+), (\d+), (\d+)\)',
+                              open('lib/preprocess.py', 'r').read())[0])
 
 classifiers = """\
 Development Status :: 5 - Production/Stable
@@ -51,7 +49,7 @@ doclines = __doc__.split("\n")
 
 setup(
     name="preprocess",
-    version=preprocess.__version__,
+    version=version,
     maintainer="Trent Mick",
     maintainer_email="trentm@gmail.com",
     url="http://code.google.com/p/preprocess/",
@@ -64,4 +62,3 @@ setup(
     classifiers=filter(None, classifiers.split("\n")),
     long_description="\n".join(doclines[2:]),
 )
-
