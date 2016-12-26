@@ -469,6 +469,8 @@ def preprocess(infile, outfile=sys.stdout, defines={},
                     var, val = match.group("var", "val")
                     if val is None:
                         val = None
+                    elif val in defines:
+                        val = defines[val]
                     else:
                         try:
                             val = eval(val, {}, {})
