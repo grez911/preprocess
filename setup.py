@@ -58,6 +58,7 @@ setup(
     py_modules=["preprocess"],
     package_dir={"": "lib"},
     entry_points={'console_scripts': ['preprocess = preprocess:main']},
+    install_requires=['future'],
     description=doclines[0],
     classifiers=filter(None, classifiers.split("\n")),
     long_description="\n".join(doclines[2:]),
