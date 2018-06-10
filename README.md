@@ -162,7 +162,7 @@ Download the latest `preprocess` zip source package, unzip it, and run `python
 setup.py install`:
 ```
     unzip master.zip
-    cd preprocess
+    cd preprocess-master
     python setup.py install
 ```
 Note that `preprocess.py` version 1.2 depends on [python-future](http://python-future.org). If you have `pip` installed, `python-future` is easily installed by
